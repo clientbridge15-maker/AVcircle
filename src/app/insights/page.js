@@ -128,8 +128,8 @@ export default function InsightsListingPage() {
       <div className="flex flex-wrap" style={{ gap: '1.5vw' }}>
         {/* Main Content Column */}
         <div className="flex-[1_1_65%]" style={{ minWidth: '40vw' }}>
-          <div className="bg-white" style={{ borderRadius: '1.1vw', padding: '1.8vw', border: '0.2vw solid #3eb0ff', marginBottom: '1.2vw' }}>
-            <h3 className="font-semibold text-gray-500 uppercase" style={{ fontSize: '0.75vw', letterSpacing: '0.05em', marginBottom: '0.8vw' }}>
+          <div className="bg-white" style={{ borderRadius: '1.1vw', padding: '1.8vw', marginBottom: '1.2vw', boxShadow: '0 0.2vw 0.8vw rgba(0,0,0,0.06)' }}>
+            <h3 className="uppercase" style={{ fontFamily: 'Avenir, sans-serif', fontWeight: 500, fontSize: '1vw', lineHeight: '100%', letterSpacing: '0em', color: '#000', marginBottom: '1vw' }}>
               LATEST INSIGHTS
             </h3>
 
@@ -149,11 +149,11 @@ export default function InsightsListingPage() {
             </div>
           </div>
 
-          <div className="bg-white" style={{ borderRadius: '1.1vw', padding: '1.8vw', border: '0.07vw solid #e0e0e0' }}>
-            <h3 className="font-semibold text-gray-500 uppercase" style={{ fontSize: '0.75vw', letterSpacing: '0.05em', marginBottom: '1vw' }}>
+          <div className="bg-white" style={{ borderRadius: '1.1vw', padding: '2vw', boxShadow: '0 0.2vw 0.8vw rgba(0,0,0,0.06)' }}>
+            <h3 className="uppercase" style={{ fontFamily: 'Avenir, sans-serif', fontWeight: 500, fontSize: '1vw', lineHeight: '100%', letterSpacing: '0em', color: '#000', marginBottom: '1.5vw' }}>
               EXPERT PERSPECTIVES
             </h3>
-            <div className="grid grid-cols-3" style={{ gap: '0.8vw' }}>
+            <div className="grid grid-cols-3" style={{ gap: '1.2vw' }}>
               {expertPerspectives.map(expert => (
                 <ExpertPerspectiveCard key={expert.id} expert={expert} />
               ))}
@@ -163,9 +163,9 @@ export default function InsightsListingPage() {
 
         {/* Sidebar Column */}
         <div className="flex-[1_1_30%] flex flex-col" style={{ minWidth: '20vw', gap: '1vw' }}>
-          <div className="bg-white" style={{ borderRadius: '0.8vw', padding: '1.2vw', boxShadow: '0 0.3vw 1vw rgba(0,0,0,0.05)' }}>
-            <h3 className="font-semibold text-gray-800 uppercase" style={{ fontSize: '0.65vw', letterSpacing: '0.05em', marginBottom: '0.6vw' }}>
-              RELATED DISCUSSIONS
+          <div className="bg-white" style={{ borderRadius: '0.8vw', padding: '1.5vw', boxShadow: '0 0.3vw 1vw rgba(0,0,0,0.05)' }}>
+            <h3 className="uppercase" style={{ fontFamily: 'Avenir, sans-serif', fontWeight: 500, fontSize: '1vw', lineHeight: '1.2', letterSpacing: '0em', color: '#000', marginBottom: '1vw' }}>
+              RELATED<br />DISCUSSIONS
             </h3>
             <div>
               {relatedDiscussions.map(discussion => (
@@ -180,9 +180,9 @@ export default function InsightsListingPage() {
             responsesText={relatedPolls.responsesText}
           />
 
-          <div className="bg-white" style={{ borderRadius: '0.8vw', padding: '1.2vw', boxShadow: '0 0.3vw 1vw rgba(0,0,0,0.05)' }}>
-            <h3 className="font-semibold text-gray-800 uppercase" style={{ fontSize: '0.65vw', letterSpacing: '0.05em', marginBottom: '0.6vw' }}>
-              RECOMMENDED ARTICLES
+          <div className="bg-white" style={{ borderRadius: '0.8vw', padding: '1.5vw', boxShadow: '0 0.3vw 1vw rgba(0,0,0,0.05)' }}>
+            <h3 className="uppercase" style={{ fontFamily: 'Avenir, sans-serif', fontWeight: 500, fontSize: '1vw', lineHeight: '1.2', letterSpacing: '0em', color: '#000', marginBottom: '1vw' }}>
+              RECOMMENDED<br />ARTICLES
             </h3>
             <div>
               {recommendedArticles.map(article => (

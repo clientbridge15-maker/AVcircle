@@ -128,7 +128,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   font-size: 0.85rem;
-  background-color: #006dd0;
+  background: linear-gradient(to right, #0D99D2, #003ECF);
   color: white;
   border-radius: 40px;
   padding: 1.5rem 3rem;

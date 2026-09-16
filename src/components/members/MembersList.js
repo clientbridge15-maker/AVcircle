@@ -6,9 +6,9 @@ export default function MembersList({ members, activeMemberId, onMemberSelect })
       {/* header */}
       <div className="flex justify-between items-center" style={{ padding: '2vw 2.5vw', borderBottom: '1px solid #e5e7eb' }}>
         <h3 className="font-semibold text-[#132742] uppercase" style={{ fontSize: '0.85vw', letterSpacing: '0.1em' }}>MEMBERS</h3>
-        <a href="#" className="text-[#6b7280] font-medium hover:text-[#132742] flex items-center" style={{ gap: '0.3vw', fontSize: '0.7vw' }}>
+        <a href="#" className="text-[#6b7280] font-medium bg-white hover:bg-gray-50 flex items-center transition-colors" style={{ gap: '0.4vw', fontSize: '0.65vw', padding: '0.4vw 1vw', borderRadius: '1.5vw', border: '0.05vw solid #e5e7eb', boxShadow: '0 0.1vw 0.5vw rgba(0,0,0,0.03)' }}>
           MORE ACTIVE
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '0.8vw', height: '0.8vw' }}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ width: '0.8vw', height: '0.8vw' }}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </a>

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import styles from './AccordionMenu.module.css';
 
 export function AccordionMenu() {
-  const [expandedItem, setExpandedItem] = useState('Articles');
+  const [expandedItem, setExpandedItem] = useState(null);
 
   const toggleItem = (item) => setExpandedItem(expandedItem === item ? null : item);
 

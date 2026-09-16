@@ -13,8 +13,8 @@ export default function CommunityBanner() {
       </div>
       <Link
         href="/discussions"
-        className="inline-flex items-center text-white bg-transparent hover:bg-white/10 transition-colors"
-        style={{ gap: '0.6vw', padding: '0.7vw 2vw', border: '0.1vw solid rgba(255,255,255,0.6)', borderRadius: '2vw', fontSize: '0.85vw', whiteSpace: 'nowrap' }}
+        className="inline-flex items-center text-[#00A4E4] bg-white hover:bg-gray-50 transition-colors font-medium"
+        style={{ gap: '0.6vw', padding: '0.7vw 2vw', borderRadius: '2vw', fontSize: '0.85vw', whiteSpace: 'nowrap' }}
       >
         Explore Discussions
       </Link>

@@ -8,7 +8,7 @@ export default function MemberDirectoryFilters() {
   ];
 
   return (
-    <div style={{ background: 'linear-gradient(135deg, #0056d6 0%, #00A4E4 50%, #00c9c9 100%)', borderRadius: '1.2vw', padding: '2.5vw 3vw 2vw', marginBottom: '2vw' }}>
+    <div style={{ background: 'linear-gradient(90deg, #0033cc 0%, #00A4E4 100%)', borderRadius: '1.2vw', padding: '2.5vw 3vw 2vw', marginBottom: '2vw' }}>
       {/* Title */}
       <h2 className="text-white font-semibold uppercase" style={{ fontSize: '0.9vw', letterSpacing: '0.1em', marginBottom: '1.8vw' }}>
         MEMBER DIRECTORY

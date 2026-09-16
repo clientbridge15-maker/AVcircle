@@ -49,9 +49,10 @@ export default function EventDetail({ event }) {
   ];
 
   return (
-    <div className="bg-white flex flex-col h-full overflow-hidden" style={{ borderRadius: '1.2vw', boxShadow: '0 0.2vw 0.8vw rgba(0,0,0,0.06)', padding: '2.5vw 3vw' }}>
+    <div className="bg-white flex flex-col h-full overflow-hidden" style={{ borderRadius: '1.2vw', boxShadow: '0 0.2vw 0.8vw rgba(0,0,0,0.06)' }}>
       {/* Header */}
-      <span className="text-[#00A4E4] font-semibold uppercase" style={{ fontSize: '0.75vw', letterSpacing: '0.1em', marginBottom: '1.2vw' }}>
+      <div style={{ backgroundColor: '#f0f4f8', padding: '2.5vw 3vw', borderBottom: '1px solid #e5e7eb' }}>
+        <span className="text-[#00A4E4] font-semibold uppercase" style={{ fontSize: '0.75vw', letterSpacing: '0.1em', marginBottom: '1.2vw', display: 'block' }}>
         {event.category}
       </span>
 
@@ -67,10 +68,11 @@ export default function EventDetail({ event }) {
         <div className="flex-shrink-0 overflow-hidden" style={{ width: '8vw', height: '6vw', borderRadius: '0.6vw' }}>
           <img src={event.detailImage} alt={event.title} className="w-full h-full object-cover" />
         </div>
+        </div>
       </div>
 
       {/* Details table */}
-      <div className="flex flex-col">
+      <div className="flex flex-col" style={{ padding: '0 3vw 2.5vw' }}>
         {details.map((detail, idx) => (
           <div
             key={idx}

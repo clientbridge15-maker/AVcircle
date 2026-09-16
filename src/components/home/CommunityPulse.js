@@ -4,10 +4,10 @@ import styles from './CommunityPulse.module.css';
 
 export function CommunityPulse() {
   const stats = [
-    { value: '18', label: 'Top Contributors', color: 'blue' },
-    { value: '05', label: 'Popular Topics', color: 'blue' },
-    { value: '1.2K', label: 'Active Members', color: 'darkBlue' },
-    { value: '03', label: 'Announcements', color: 'purple' },
+    { value: '18', label: 'Top Contributors', bg: '#3A97FF' },
+    { value: '05', label: 'Popular Topics', bg: '#1D79E0' },
+    { value: '1.2K', label: 'Active Members', bg: '#003ECF' },
+    { value: '03', label: 'Announcements', bg: '#5600CF' },
   ];
 
   return (
@@ -16,7 +16,7 @@ export function CommunityPulse() {
       
       <div className={styles.statsGrid}>
         {stats.map((stat, index) => (
-          <div key={index} className={`${styles.statItem} ${styles[stat.color]}`}>
+          <div key={index} className={styles.statItem} style={{ backgroundColor: stat.bg }}>
             <span className={styles.statValue}>{stat.value}</span>
             <span className={styles.statLabel}>{stat.label}</span>
           </div>

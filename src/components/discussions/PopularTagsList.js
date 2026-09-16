@@ -2,11 +2,11 @@ import React from 'react';
 
 export function PopularTagsList({ tags }) {
   return (
-    <div className="bg-white" style={{ borderRadius: '1.2vw', padding: '1.8vw', boxShadow: '0 0.2vw 1vw rgba(0,0,0,0.03)' }}>
-      <h3 className="font-semibold text-gray-800 uppercase" style={{ fontSize: '0.85vw', letterSpacing: '0.05em', marginBottom: '1.5vw' }}>
+    <div className="bg-white flex flex-col h-full" style={{ borderRadius: '1.2vw', padding: '1.8vw', boxShadow: '0 0.2vw 1vw rgba(0,0,0,0.03)' }}>
+      <h3 className="uppercase" style={{ fontFamily: 'Avenir, sans-serif', fontWeight: 500, fontSize: '1vw', lineHeight: '100%', letterSpacing: '0em', color: '#000', marginBottom: '1vw' }}>
         POPULAR TAGS
       </h3>
-      
+      <hr className="border-0" style={{ borderTop: '0.05vw solid #eaeaea', margin: '0 0 1.5vw 0' }} />
       <div className="flex flex-col" style={{ gap: '0.8vw' }}>
         {tags.map((tag, index) => (
           <div 

@@ -80,10 +80,10 @@ export default function InsightDetailPage() {
 
         {/* Article Header - left aligned */}
         <div style={{ marginBottom: '2vw' }}>
-          <h1 className="font-semibold text-gray-900" style={{ fontSize: '2.2vw', lineHeight: 1.2, marginBottom: '0.3vw' }}>
+          <h1 className="font-semibold text-gray-900" style={{ fontSize: '3.2vw', lineHeight: 1.2, marginBottom: '0.3vw' }}>
             {articleData.title}
           </h1>
-          <h1 className="font-semibold text-[#00A4E4]" style={{ fontSize: '2.2vw', lineHeight: 1.2 }}>
+          <h1 className="font-semibold text-[#00A4E4]" style={{ fontSize: '3.2vw', lineHeight: 1.2 }}>
             {articleData.titleHighlight}
           </h1>
         </div>
@@ -94,7 +94,7 @@ export default function InsightDetailPage() {
         </div>
 
         {/* Article Meta */}
-        <div className="flex text-[#00A4E4] border-b border-gray-100" style={{ gap: '1vw', fontSize: '0.7vw', marginBottom: '1.5vw', paddingBottom: '1.2vw' }}>
+        <div className="flex text-[#00A4E4] border-b border-gray-100" style={{ gap: '1vw', fontSize: '1vw', marginBottom: '1.5vw', paddingBottom: '1.2vw' }}>
           <span>{articleData.author}</span>
           <span className="text-gray-300">|</span>
           <span>{articleData.timeAgo}</span>
@@ -107,7 +107,7 @@ export default function InsightDetailPage() {
 
         {/* Related Articles Section */}
         <div style={{ marginBottom: '2.5vw' }}>
-          <h3 className="font-semibold text-gray-800" style={{ fontSize: '1vw', marginBottom: '1.2vw' }}>Related Articles</h3>
+          <h3 className="font-semibold text-gray-800" style={{ fontSize: '1.5vw', marginBottom: '1.2vw' }}>Related Articles</h3>
           <div className="grid grid-cols-4" style={{ gap: '1.5vw' }}>
             {relatedArticles.map(article => (
               <RelatedArticleGridCard key={article.id} article={article} />

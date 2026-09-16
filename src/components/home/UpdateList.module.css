@@ -27,7 +27,7 @@
   background: transparent;
 }
 .list::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: #385e8747;
   border-radius: 4px;
 }
 
@@ -49,7 +49,7 @@
 .itemContent h4 {
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--color-secondary);
+  color: #385e87;
   margin-bottom: 0.25rem;
 }
 
@@ -62,7 +62,7 @@
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background-color: var(--color-primary);
+  background-color: #3A97FF;
   color: white;
   display: flex;
   align-items: center;

@@ -2,7 +2,7 @@ import React from 'react';
 
 export function JoinDiscussionForm() {
   return (
-    <div className="text-white" style={{ background: 'linear-gradient(135deg, #0078d4, #00b4d8)', borderRadius: '0.8vw', padding: '1.5vw' }}>
+    <div className="text-white h-full" style={{ background: 'linear-gradient(135deg, #4D4376, #2F72A8, #11A0DB)', borderRadius: '0.8vw', padding: '1.5vw' }}>
       <h3 className="font-medium" style={{ fontSize: '0.9vw', marginBottom: '1vw' }}>Join Discussion</h3>
 
       <div className="flex flex-col" style={{ gap: '0.6vw' }}>

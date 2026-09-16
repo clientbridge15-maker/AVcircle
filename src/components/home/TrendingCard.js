@@ -17,7 +17,7 @@ export function TrendingCard() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <Card className={styles.trendingCard} style={{ backgroundImage: `linear-gradient(to right, rgba(12, 43, 74, 0.95) 0%, rgba(12, 43, 74, 0.8) 50%, rgba(12, 43, 74, 0.2) 100%), url('${tabs[activeTab].image}')` }}>
+    <Card className={styles.trendingCard} style={{ backgroundImage: `linear-gradient(to bottom, #003ECF 0%, rgba(150, 196, 243, 0) 50%, rgba(12, 43, 74, 0) 100%), url('${tabs[activeTab].image}')` }}>
       <div className={styles.sidebar}>
         <div className={styles.navIcons}>
           {tabs.map((tab, index) => (

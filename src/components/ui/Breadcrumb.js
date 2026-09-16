@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export function Breadcrumb({ items }) {
   return (
-    <nav aria-label="breadcrumb" className="text-[#0056b3]" style={{ margin: '1.2vw 0', fontSize: '0.7vw' }}>
+    <nav aria-label="breadcrumb" className="text-[#0056b3]" style={{ margin: '1.2vw 0', fontSize: '0.9vw' }}>
       <ol className="list-none p-0 flex m-0" style={{ gap: '0.3vw' }}>
         {items.map((item, index) => (
           <li key={index} className="flex items-center" style={{ gap: '0.3vw' }}>
